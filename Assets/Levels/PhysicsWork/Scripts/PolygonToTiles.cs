@@ -15,7 +15,7 @@ public class CollisionTile
 
 public static class PolygonToTiles
 {
-    public static CollisionTile[] GetTiles(this PolygonCollider2D collider)
+    /*public static CollisionTile[] GetTiles(this PolygonCollider2D collider)
     {
         var startingPoint = collider.bounds.min;
         for (int y = 0; y < collider.bounds.max.y; y += CollisionTile.TILESIZE)
@@ -60,5 +60,5 @@ public static class PolygonToTiles
             heightmap = heightmap,
             yflip = yflip
         };
-    }
+    }*/
 }

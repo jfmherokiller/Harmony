@@ -44,7 +44,7 @@ public class LevelTiles : MonoBehaviour
 
     void OnDrawGizmos()
     {
-        var prevColor = Gizmos.color;
+        /*var prevColor = Gizmos.color;
         Gizmos.color = Color.white;
         foreach (var tile in tiles)
         {
@@ -56,6 +56,6 @@ public class LevelTiles : MonoBehaviour
                 }
             }
         }
-        Gizmos.color = prevColor;
+        Gizmos.color = prevColor;*/
     }
 }
