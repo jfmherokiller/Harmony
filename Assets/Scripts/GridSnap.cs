@@ -20,7 +20,7 @@ public class GridSnap : MonoBehaviour
         snapSize = Mathf.ClosestPowerOfTwo(snapSize);
         var t = Reflection.editorAssembly.GetType("UnityEditor.GridSettings");
         var f = t.GetProperty("size");
-        f.SetMethod.Invoke(f, new object[] { new Vector3(snapSize, snapSize, snapSize) });
+        f?.SetMethod.Invoke(f, new object[] {new Vector3(snapSize, snapSize, snapSize)});
         foreach (var childTransform in transform.GetComponentsInChildren<Transform>())
         {
             var childPos = childTransform.position;
